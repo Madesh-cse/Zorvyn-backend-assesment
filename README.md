@@ -21,6 +21,8 @@ The goal of this project is to demonstrate backend architecture, data modeling, 
 
 ## Folder Structure
 
+```json
+
 finance-backend/
 ├── src/
 │   ├── config/                # database connection & swagger configuration
@@ -59,6 +61,8 @@ finance-backend/
 ├── package.json
 ├── tsconfig.json
 └── README.md
+```
+
 ## Features
 
 - User registration and login with JWT authentication
