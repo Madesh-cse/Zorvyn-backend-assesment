@@ -11,7 +11,7 @@ app.get("/", (req:Request,res:Response)=>{
 })
 connectDB().then(()=>{
     app.listen(PORT,()=>{
-        console.log("Server is Running in port 8000")
+        console.log("Server is Running in port " + PORT)
     })
 })
 .catch((err)=>{
