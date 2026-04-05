@@ -15,7 +15,16 @@ const options: swaggerJSDoc.Options = {
       {
         url: process.env.BASE_URL || "http://localhost:8000/api"
       }
-    ]
+    ],
+    components: {
+      securitySchemes: {
+        bearerAuth: {
+          type: "http",
+          scheme: "bearer",
+          bearerFormat: "JWT"
+        }
+      }
+    }
   },
   apis: ["./src/routes/*.ts"] // reads route comments
 };
