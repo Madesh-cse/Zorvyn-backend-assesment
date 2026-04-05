@@ -21,7 +21,7 @@ The goal of this project is to demonstrate backend architecture, data modeling, 
 
 ## Folder Structure
 
-```json
+```text
 
 finance-backend/
 ├── src/
