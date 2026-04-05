@@ -21,15 +21,46 @@ The goal of this project is to demonstrate backend architecture, data modeling, 
 
 ## Folder Structure
 
-src/
-├── config/            # database connection and swagger setup
-├── controllers/       # auth, user, record, dashboard controllers
-├── middleware/        # jwt auth, role authorization, rate limiting
-├── models/            # user and financial record schemas
-├── routes/            # auth, user, record, dashboard routes
-├── utils/             # JWT token generation and common helper methods
-├── app.ts             # express app setup
-├── server.ts          # application entry point
+```text
+finance-backend/
+│
+├── src/
+│   ├── config/
+│   │   └── db-connection.ts
+│   │
+│   ├── controllers/
+│   │   ├── authController.ts
+│   │   ├── userController.ts
+│   │   ├── recordController.ts
+│   │   └── dashboardController.ts
+│   │
+│   ├── middleware/
+│   │   ├── authMiddleware.ts
+│   │   ├── role.ts
+│   │   └── rateLimiter.ts
+│   │
+│   ├── models/
+│   │   ├── user.model.ts
+│   │   └── record.model.ts
+│   │
+│   ├── routes/
+│   │   ├── auth.ts
+│   │   ├── user.ts
+│   │   ├── record.ts
+│   │   ├── dashboard.ts
+│   │   └── index.ts
+│   │
+│   ├── utils/
+│   │   └── generateToken.ts
+│   │
+│   ├── app.ts
+│   └── server.ts
+│
+├── .gitignore
+├── package.json
+├── tsconfig.json
+└── README.md
+```
 
 ## Features
 
